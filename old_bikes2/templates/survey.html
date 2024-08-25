@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Experience</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://wallpaper.forfun.com/fetch/b1/b1f0aeb3533052ef9f98a5d1bceb178c.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 48px;
+            color: #189be7;
+            text-shadow: 3px 3px 5px #000;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .experience-form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 500px;
+            animation: slideInUp 1s ease-in-out;
+        }
+        .rating {
+            margin-bottom: 15px;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            font-size: 32px;
+            color: #ffdd00;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .rating label:hover,
+        .rating input:checked ~ label {
+            color: #ffcc00;
+        }
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+            color: #000;
+            background-color: #fff;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #ff6600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #e65c00;
+            transform: translateY(-3px);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInUp {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Experience</h1>
+    <p>We would love to hear about your experience with our Bike Price Prediction software. Please rate us and share your feedback below.</p>
+    <div class="experience-form">
+        
+        <form action="/submit-feedback" method="post">
+            <div class="rating">
+                <input type="radio" name="rating" id="star5" value="5">
+                <label for="star5">&#9733;</label>
+                <input type="radio" name="rating" id="star4" value="4">
+                <label for="star4">&#9733;</label>
+                <input type="radio" name="rating" id="star3" value="3">
+                <label for="star3">&#9733;</label>
+                <input type="radio" name="rating" id="star2" value="2">
+                <label for="star2">&#9733;</label>
+                <input type="radio" name="rating" id="star1" value="1">
+                <label for="star1">&#9733;</label>
+            </div>
+            <textarea name="experience" rows="6" placeholder="Share your experience..." required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html>

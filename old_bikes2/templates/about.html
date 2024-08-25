@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Brands</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://static.vecteezy.com/system/resources/previews/027/447/175/non_2x/motorbikers-silhouette-concept-free-photo.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        .brand-card {
+            margin-bottom: 30px;
+            transition: transform 0.3s ease-in-out;
+            background-color: rgba(14, 1, 1, 0.7); /* Semi-transparent background for readability */
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .brand-card:hover {
+            transform: translateY(-10px);
+        }
+        .brand-img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .brand-title {
+            font-size: 1.5rem;
+            color: #ffcc00; /* Gold color for the brand title */
+            margin-top: 10px;
+        }
+        .brand-title:hover {
+            color: #fff; /* White color on hover */
+        }
+        .brand-details {
+            font-size: 1rem;
+            color: #ccc;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+        a.button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fbff00;
+            background-color: #0008ff54;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        a.button:hover {
+            background-color: #e65c00;
+            transform: translateY(-3px);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-5">Bike Brands</h1>
+        <div class="row">
+            <!-- Bajaj -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://indidesign.in/wp-content/uploads/2024/07/BAL24_Web.jpg" class="card-img-top brand-img" alt="Bajaj">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">Bajaj</h5>
+                        <p class="brand-details">
+                            🏍Bajaj Auto is an Indian multinational two-wheeler and three-wheeler manufacturing company. It is one of the largest motorcycle manufacturers in India and is known for models like Pulsar, Avenger, and Dominar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Royal Enfield -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://images.hindustantimes.com/auto/img/2024/06/07/1600x900/Royal_Enfield_Logo_Trademark_1717739787782_1717739790202.jpg" class="card-img-top brand-img" alt="Royal Enfield">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">Royal Enfield</h5>
+                        <p class="brand-details">
+                            🏍Royal Enfield is an Indian multinational motorcycle manufacturing company with the tagline "The oldest global motorcycle brand in continuous production." It is famous for its classic and vintage-styled motorcycles like the Bullet, Classic, and Himalayan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://img.theweek.in/content/dam/week/news/biz-tech/images/2021/7/16/hero-logo-pic.jpg" class="card-img-top brand-img" alt="Hero">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">Hero</h5>
+                        <p class="brand-details">
+                            🏍Hero MotoCorp is an Indian multinational motorcycle and scooter manufacturer. It is the largest two-wheeler manufacturer in the world and is known for its fuel-efficient models like Splendor, Passion, and Glamour.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Honda -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://c8.alamy.com/comp/CWRWD7/honda-motorcycles-logo-covered-with-raindrops-CWRWD7.jpg" class="card-img-top brand-img" alt="Honda">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">Honda</h5>
+                        <p class="brand-details">
+                            🏍Honda Motorcycle & Scooter India (HMSI) is a subsidiary of the Honda Motor Company. It is known for its reliable and efficient motorcycles and scooters, including models like Activa, Shine, and CB Hornet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Yamaha -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://www.iamabiker.com/wp-content/uploads/2015/08/Yamaha-YZF-R3-HD-wallpapers-4.jpg" class="card-img-top brand-img" alt="Yamaha">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">Yamaha</h5>
+                        <p class="brand-details">
+                            🏍Yamaha Motor Company is a Japanese manufacturer of motorcycles, marine products, and other motorized products. It is known for its high-performance motorcycles like the YZF-R series and FZ series.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- TVS -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://wallpapercave.com/wp/wp4233287.jpg" class="card-img-top brand-img" alt="TVS">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">TVS</h5>
+                        <p class="brand-details">
+                            🏍TVS Motor Company is an Indian multinational motorcycle company that manufactures motorcycles, scooters, and three-wheelers. Notable models include Apache, Jupiter, and Ntorq.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- KTM -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://m.media-amazon.com/images/I/81VO23Yr-OL.jpg" class="card-img-top brand-img" alt="KTM">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">KTM</h5>
+                        <p class="brand-details">
+                            🏍KTM AG is an Austrian motorcycle and sports car manufacturer. The company is known for its off-road bikes and street motorcycles like the Duke series and RC series.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Suzuki -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://images2.alphacoders.com/922/thumb-1920-922958.jpg" class="card-img-top brand-img" alt="Suzuki">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">Suzuki</h5>
+                        <p class="brand-details">
+                            🏍Suzuki Motorcycle India is a subsidiary of Suzuki Motor Corporation, Japan. The company is known for its innovative designs and models like the Gixxer, Hayabusa, and Access.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Harley-Davidson -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://wallpapercave.com/wp/35IznDn.jpg" class="card-img-top brand-img" alt="Harley-Davidson">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">Harley-Davidson</h5>
+                        <p class="brand-details">
+                            🏍Harley-Davidson, Inc. is an American motorcycle manufacturer known for its heavyweight motorcycles. Popular models include the Sportster, Dyna, and Touring series.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Kawasaki -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/125/721/165/kawasaki-ninja-kawasaki-ninja-h2r-motorcycle-wallpaper-preview.jpg" class="card-img-top brand-img" alt="Kawasaki">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">Kawasaki</h5>
+                        <p class="brand-details">
+                            🏍Kawasaki Heavy Industries Motorcycle & Engine is a division of Kawasaki Heavy Industries. The company is known for high-performance motorcycles like the Ninja and Z series.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Hyosung -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://www.iamabiker.com/wp-content/uploads/2013/01/Hyosung-GT250R-Comet-wallpapers-02.jpg" class="card-img-top brand-img" alt="Hyosung">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">Hyosung</h5>
+                        <p class="brand-details">
+                            🏍Hyosung Motors is a South Korean motorcycle manufacturer known for its affordable and reliable models like the GT250R and Aquila Pro.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Mahindra -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://www.iamabiker.com/wp-content/uploads/2020/10/BS6-Mojo-300-ABS-BS6-HD-wallpapers-5.jpg" class="card-img-top brand-img" alt="Mahindra">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">Mahindra</h5>
+                        <p class="brand-details">
+                            🏍Mahindra & Mahindra is an Indian multinational automotive manufacturer. It is known for its rugged bikes like the Mojo and Centuro.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Benelli -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhvdd_-IvHMi7WlY9LcqZK5fqsRQSsHylPXldGIK1K9LIgayaaLFoM_2KEirycnPE_QNU&usqp=CAU" class="card-img-top brand-img" alt="Benelli">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">Benelli</h5>
+                        <p class="brand-details">
+                            🏍Benelli is an Italian motorcycle manufacturer known for its stylish and performance-oriented bikes like the Leoncino and TRK series.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Triumph -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/904/128/925/triumph-boneville-black-triumph-standard-motorcycle-wallpaper-preview.jpg" class="card-img-top brand-img" alt="Triumph">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">Triumph</h5>
+                        <p class="brand-details">
+                            🏍Triumph Motorcycles is a British motorcycle manufacturer known for its classic and modern bikes like the Bonneville and Street Triple.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Ducati -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFM0TqEfgFf6XjdFm3ESW8B4E5Wkn524x03w&s" class="card-img-top brand-img" alt="Ducati">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">Ducati</h5>
+                        <p class="brand-details">
+                            🏍Ducati is an Italian brand renowned for its high-performance and stylish motorcycles like the Panigale and Multistrada.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- BMW -->
+            <div class="col-md-4">
+                <div class="card brand-card">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/396/67/717/bmw-motorcycle-vehicle-bmw-s1000rr-wallpaper-preview.jpg" class="card-img-top brand-img" alt="BMW">
+                    <div class="card-body text-center">
+                        <h5 class="brand-title">BMW</h5>
+                        <p class="brand-details">
+                           🏍 BMW Motorrad is a division of BMW known for its luxury and performance-oriented motorcycles like the R1250GS and S1000RR.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="home.html" class="button">Check another Bike</a>
+        <a href="about.html" class="button">About Our Brands</a>
+        <a href="contact.html" class="button">Contact Us</a>
+        <a href="survey.html" class="button">Survey</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
