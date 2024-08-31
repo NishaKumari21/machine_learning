@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://wallpapercave.com/wp/wp2025608.jpg");
+            background-size: cover;
+            position: relative; /* For positioning clouds */
+        }
+
+        #contact-form {
+            max-width: 500px;
+            margin: 100px auto 40px auto; /* Adjusted for the frame */
+            padding: 30px;
+            background-color: rgba(243, 240, 243, 0.8); /* Semi-transparent background */
+            border: 2px solid #64aea6; /* Frame */
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #0f6edb;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #4993e7;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent navbar */
+        }
+
+        .star {
+            color: #FFD700;
+            font-size: 1.5rem;
+            position: absolute;
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent footer */
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+
+        h2 {
+            text-align:right;
+            color: #e0f395;
+            margin-top: 80px;
+            font-weight: bold;
+            /* background-color: rgba(255, 255, 255, 0.8); Semi-transparent heading background */
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Stars for the background -->
+    <span class="star" style="top: 10%; left: 20%;">⭐</span>
+    <span class="star" style="top: 15%; left: 70%;">⭐</span>
+    <span class="star" style="top: 50%; left: 50%;">⭐</span>
+    <span class="star" style="top: 70%; left: 30%;">⭐</span>
+    <span class="star" style="top: 80%; left: 80%;">⭐</span>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Customer Satisfaction Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h2>🌤️ DreamSky Airways Satisfaction Predictor 🛫</h2>
+
+    <!-- Small Clouds -->
+    <div class="cloud small"></div>
+    <div class="cloud small" style="top: 25%; left: 10%;"></div>
+
+    <form action="{{ url_for('predict') }}" method="post" id="contact-form">
+        <label for="age">Age :👋</label>
+        <input type="text" name="age" id="age" required><br>
+
+        <label for="flight-distance">Flight Distance :🌏</label>
+        <input type="text" name="flight_distance" id="flight-distance" required><br>
+
+        <label for="inflight-entertainment">Inflight Entertainment :🎥</label>
+        <select id="inflight-entertainment" name="inflight_entertainment">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+
+        <label for="baggage-handling">Baggage Handling :🧳</label>
+        <select id="baggage-handling" name="baggage_handling">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+
+        <label for="cleanliness">Cleanliness :🧺</label>
+        <select id="cleanliness" name="cleanliness">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+
+        <label for="departure-delay">Departure Delay in Minutes :⏰</label>
+        <input type="text" name="departure_delay" id="departure-delay" required><br>
+
+        <label for="arrival-delay">Arrival Delay in Minutes :⌚</label>
+        <input type="text" name="arrival_delay" id="arrival-delay" required><br>
+
+        <label for="gender">Gender :👩‍🦰👨</label>
+        <select id="gender" name="gender">
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select><br>
+
+        <label for="customer-type">Customer Type :🤶</label>
+        <select id="customer-type" name="customer_type">
+            <option value="0">Loyal Customer</option>
+            <option value="1">Disloyal Customer</option>
+        </select><br>
+
+        <label for="travel-type">Type of Travel :🛩✈</label>
+        <select id="travel-type" name="travel_type">
+            <option value="1">Personal Travel</option>
+            <option value="0">Business Travel</option>
+        </select><br>
+
+        <label for="class-type">Class Type :🚍</label>
+        <select id="class-type" name="class_type">
+            <option value="ECO">Economy</option>
+            <option value="ECO_PLUS">Economy Plus</option>
+            <option value="Business">Business</option>
+        </select><br>
+
+        <div class="d-flex justify-content-between">
+            <a class="btn btn-primary btn-lg" href="home.html" role="button">Back</a>
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </div>
+    </form>
+
+    <footer class="footer">
+        <div class="container">
+            <p>DreamSky Airways © 2024 | Made with ✨ by Nisha Kumari</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

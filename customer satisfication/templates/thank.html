@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Airline Project</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-image: url('https://www.itl.cat/pngfile/big/54-548726_42-airplane-wallpapers-plane-take-off-at-night.jpg'); /* Replace with an airline background image URL */
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .thank-you-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            margin: 50px auto;
+            max-width: 800px;
+            border-radius: 15px;
+            border: 2px solid #ff69b4; /* Girly-themed border color */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        .thank-you-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff69b4;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+        .thank-you-message {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        .btn-feedback {
+            margin: 15px;
+            padding: 12px 30px;
+            font-weight: bold;
+            border: 2px solid #ff69b4;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        .btn-feedback-satisfied {
+            background-color: #32cd32; /* Green button for satisfied */
+            color: #fff;
+        }
+        .btn-feedback-satisfied:hover {
+            background-color: #28a745;
+            border-color: #28a745;
+            box-shadow: 0 8px 15px rgba(50, 205, 50, 0.3);
+        }
+        .btn-feedback-not-satisfied {
+            background-color: #ff4500; /* Red button for not satisfied */
+            color: #fff;
+        }
+        .btn-feedback-not-satisfied:hover {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            box-shadow: 0 8px 15px rgba(255, 69, 0, 0.3);
+        }
+        .feedback-input {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+            height: 100px;
+            margin-bottom: 20px;
+            resize: none;
+        }
+        .btn-submit {
+            background-color: #ff69b4; /* Submit button */
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-submit:hover {
+            background-color: #e75480;
+            box-shadow: 0 8px 15px rgba(255, 105, 180, 0.4);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid #ff69b4;
+        }
+    </style>
+</head>
+<body>
+
+<div class="thank-you-container">
+    <!-- Thank You Title -->
+  
+    <h1 class="thank-you-title">Thank You for Choosing DreamSky Airways!🛬</h1>
+    <!-- Thank You Message -->
+    <p class="thank-you-message">
+        We hope you had a wonderful experience flying with us. ☺Your feedback is valuable to us in improving our services. Please let us know how you felt about your journey.
+    </p>
+    
+    <!-- Feedback Buttons -->
+    <div class="feedback-buttons">
+        <button class="btn btn-feedback btn-feedback-satisfied">😊 Satisfied</button>
+        <button class="btn btn-feedback btn-feedback-not-satisfied">😞 Not Satisfied</button>
+    </div>
+
+    <!-- Feedback Form -->
+    <div class="feedback-form mt-4">
+        <textarea class="feedback-input" placeholder="Please share your feedback here..."></textarea>
+        <button class="btn btn-submit">Submit Feedback</button>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>© 2024 DreamSky Airways!🛬. All Rights Reserved.</p>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

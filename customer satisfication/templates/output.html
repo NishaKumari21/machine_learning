@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Passenger Satisfaction Prediction</title>
+    <!-- Include Bootstrap for styling -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e0f7fa; /* A softer aquamarine */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://wallpaper.dog/large/10878273.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            position: relative; /* To position clouds */
+        }
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border: 5px solid #56c9cd; /* Frame around the content box */
+            max-width: 600px;
+        }
+        .content-box h2 {
+            color: #00796b;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        .result {
+            font-size: 24px;
+            color: #388e3c; /* Satisfied color */
+            font-weight: bold;
+        }
+        .btn-custom {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #004d40;
+        }
+        .about-airline {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #004d40;
+        }
+        /* Small Cloud Styles */
+        .cloud {
+            position: absolute;
+            background: rgb(138, 214, 219);
+            border-radius: 50%;
+            box-shadow: 20px 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .cloud::before, .cloud::after {
+            content: '';
+            position: absolute;
+            background: rgb(176, 216, 216);
+            border-radius: 50%;
+        }
+        .cloud.small {
+            width: 50px;
+            height: 50px;
+            top: 10%;
+            left: 70%;
+        }
+        .cloud.small::before {
+            width: 30px;
+            height: 30px;
+            top: -10px;
+            left: 20px;
+        }
+        .cloud.small::after {
+            width: 20px;
+            height: 20px;
+            top: 10px;
+            right: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Small Clouds -->
+        <div class="cloud small"></div>
+        <div class="cloud small" style="top: 25%; left: 10%;"></div>
+        <div class="cloud small"></div>
+        <div class="cloud small" style="bottom: 25%; left: 10%;"></div>
+        <div class="cloud small"></div>
+        <div class="cloud small" style="bottom: 65%; right: 10%;"></div>
+        <div class="cloud small"></div>
+        <div class="cloud small" style="bottom: 35%; right: 10%;"></div>
+        
+        <div class="content-box">
+            <h2>Your Passenger Satisfaction Prediction:</h2>
+            <div class="result">{{ output }}</div>
+            <button class="btn-custom" onclick="window.location.href='contact.html'">Contact Us</button>
+            
+            <!-- About Airline Section -->
+            <div class="about-airline">
+                <p>Our airline is committed to delivering the highest level of passenger satisfaction. With a focus on comfort, safety, and reliability, we strive to make every journey a memorable experience. Explore the skies with us and discover a world of exceptional service and convenience.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and dependencies (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
