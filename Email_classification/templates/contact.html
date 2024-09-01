@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Email Classification</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-image: url('https://wallpapers.com/images/hd/email-background-t0cbknt4ahfsy4rc.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        .contact-container {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        h2 {
+            color: #20B2AA;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .form-control {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            border: 2px solid #20B2AA;
+        }
+        .btn-custom {
+            background-color: #20B2AA;
+            color: white;
+            border-radius: 20px;
+            border: none;
+            font-size: 1.2em;
+            margin-top: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-custom:hover {
+            background-color: #1E90FF;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Container -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 contact-container">
+                <!-- Heading -->
+                <h2 class="text-center mb-4">📞 Contact Us</h2>
+                
+                <!-- Contact Form -->
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Write your message here... 😊"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom btn-block">✨ Send Message ✨</button>
+                </form>
+            </div>
+        </div>
+    </div>
+     <!-- Footer -->
+     <div class="footer">
+        <p>© 2024 Email Classification Project | Developed by Nisha Kumari</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

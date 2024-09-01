@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Classification</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-image: url('https://wallpapers.com/images/hd/mail-and-digital-mailbox-kcnm3a4v99fbdf12.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        h1 {
+            color: #FFD700;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+        }
+        #emailInput {
+            background-color: rgba(255, 255, 255, 0.5);
+            border: 2px solid #20B2AA;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        #submitBtn, #contactBtn, #thankYouBtn {
+            background-color: #20B2AA;
+            color: white;
+            border-radius: 20px;
+            border: none;
+            font-size: 1.2em;
+            margin-top: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #submitBtn:hover, #contactBtn:hover, #thankYouBtn:hover {
+            background-color: #1E90FF;
+        }
+        #result h4 {
+            color: #FF4500;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Container -->
+    <div class="container mt-5">
+        <!-- Heading -->
+        <h1 class="text-center mb-4">📧 Email Classification</h1>
+        
+        <!-- Email Classification Form -->
+        <div class="card p-4">
+            <form id="emailForm">
+                <div class="form-group">
+                    <label for="emailInput">Enter your email:</label>
+                    <textarea class="form-control" id="emailInput" rows="5" placeholder="Write your email here... 😊"></textarea>
+                </div>
+                <button type="button" class="btn btn-block" id="submitBtn" onclick="classifyEmail()">✨ Submit ✨</button>
+            </form>
+
+            <!-- Result Section -->
+            <div id="result" class="mt-4"></div>
+
+            <!-- Additional Buttons -->
+            <div class="text-center mt-4">
+                <!-- <a href="contact.html" class="btn btn-custom">Contact Us 📧</a> -->
+            
+                <button class="btn btn-block">
+                    <a href="contact.html"id="contactBtn">📞 Contact Us</button>
+                </button> 
+                <button class="btn btn-block">
+                    <a href="thank.html"id="thankYouBtn">🙏 Thank You</button>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Email Classification -->
+    <!-- <script>
+        function classifyEmail() {
+            const emailText = document.getElementById('emailInput').value;
+            
+            // Dummy classification logic for demonstration (replace with actual model)
+            let resultText = "Unknown";
+            if (emailText.toLowerCase().includes("win") || emailText.toLowerCase().includes("prize")) {
+                resultText = "Spam";
+            } else {
+                resultText = "Ham";
+            }
+             -->
+            <!-- // Display the result
+            document.getElementById('result').innerHTML = `<h4 class="text-center">${resultText}</h4>`;
+        } -->
+    </script>
+     <!-- Footer -->
+     <div class="footer">
+        <p>© 2024 Email Classification Project | Developed by Nisha Kumari</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
