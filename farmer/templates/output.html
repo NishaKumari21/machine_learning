@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction Output</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://png.pngtree.com/background/20230424/original/pngtree-asian-farmer-digging-mud-in-the-rice-field-picture-image_2458116.jpg'); /* Replace with your actual background image path */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #02230b;
+            font-family: 'Arial', sans-serif;
+        }
+        .output-block {
+            background-color: rgba(255, 223, 186, 0.8); /* Light orange background for a warm look */
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .emoji-background {
+            font-size: 30px; /* Reduced font size for emojis */
+        }
+        .btn-custom {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: white;
+            padding: 8px 15px;
+            font-size: 12px; /* Reduced font size for buttons */
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .btn-custom:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .crop-image {
+            width: 80px; /* Smaller image size */
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 5px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .list-group-item {
+            font-size: 14px; /* Smaller text size for list items */
+            color: #02230b;
+            border: none;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Output Block -->
+    <div class="container emoji-background mt-5">
+        <div class="output-block">
+            <h1>🌾🌽🍅🌻 Crop Prediction Output 🌻🍅🌽🌾</h1>
+            <p class="mt-3">Based on the input values, the recommended crops to plant are:</p>
+            <ul class="list-group list-group-flush">
+                {% for crop in crops %}
+                    <li class="list-group-item bg-transparent"><strong>🌱 {{ crop }}</strong></li>
+                {% endfor %}
+            </ul>
+            <p class="mt-2">Please ensure that the soil pH, Nitrogen, Phosphorus, and Potassium levels are maintained for optimal growth.</p>
+            <div class="image-container mt-4"> <!-- Example images with different colors in circle shape -->
+                 <img src="https://proveg.org/wp-content/uploads/2022/03/shutterstock_102557018.jpg" class="crop-image"> 
+                 <img src="https://www.usatoday.com/gcdn/-mm-/b2b05a4ab25f4fca0316459e1c7404c537a89702/c=0-0-1365-768/local/-/media/2021/05/08/USATODAY/usatsports/imageForEntry35-1sQ.jpg?width=660&height=371&fit=crop&format=pjpg&auto=webp" class="crop-image">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf2lwMBvycl51UD37ROMvDO6hk_gl6UMyLIA&s" class="crop-image"> 
+                  <img src="https://www.eatingwell.com/thmb/kZesQSC3BIWMmY1nVkXn0c4_UdU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-cook-lentils-opener-2000-9427064c3429470cb7c9b14646ea8a0e.jpg"  class="crop-image">
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO0kTRaBxL7AvQ94-gBOibKkfSEIJI6EwZmw&s" class="crop-image"> 
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPdr0o0kduRYB5PdTxSGnB-5KBdiOKd81p_A&s" class="crop-image"> 
+                </div>
+
+            <div class="button-container mt-3">
+                <button class="btn btn-custom" onclick="window.location.href='home.html'">🔄 Predict Again</button>
+                <button class="btn btn-custom" onclick="window.location.href='about.html'">ℹ️ About Us</button>
+                <button class="btn btn-custom" onclick="window.location.href='about_crops.html'">🌾 About Crops</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+        <!-- <p>&copy; 2024 Crop Prediction System. All Rights Reserved.</p> -->
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

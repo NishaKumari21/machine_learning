@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction Project</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://png.pngtree.com/background/20230424/original/pngtree-asian-farmer-digging-mud-in-the-rice-field-picture-image_2458116.jpg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            margin-bottom: 30px;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .about-me, .about-project {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .about-me img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .about-project img {
+            max-width: 500px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Crop Prediction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-project">About Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about_crops.html">About Crops</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="output.html">Output</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <div id="about-me" class="container mt-5">
+        <div class="about-me text-center">
+            <!-- <img src="https://your-image-url.com/your-image.jpg" alt="Nisha Kumari"> Replace with your image URL -->
+            <h2>Nisha Kumari</h2>
+            <p>Hello! I'm Nisha Kumari, a passionate data scientist with a keen interest in artificial intelligence and machine learning. I enjoy working on innovative projects that harness the power of data to solve real-world problems. Feel free to explore my work and connect with me!</p>
+        </div>
+    </div>
+
+    <!-- About Project Section -->
+    <div id="about-project" class="container mt-5">
+        <div class="about-project">
+            <h2>About This Project: Crop Prediction</h2>
+            <p>Crop prediction is an essential aspect of modern agriculture. This project aims to predict the optimal crops for planting based on various parameters. The goal is to assist farmers in making informed decisions to maximize crop yield and ensure sustainable farming practices.</p>
+            <p>The project utilizes machine learning algorithms to analyze data such as soil pH, nitrogen levels, phosphorus levels, and potassium levels. By processing these parameters, the system can provide recommendations for the best crops to plant in a given region. This helps in optimizing resource usage, reducing environmental impact, and improving overall productivity.</p>
+            <p>The system takes into account different variables including weather conditions, soil health, and crop history to generate accurate predictions. The user inputs data through a web interface, and the model processes this information to offer suggestions tailored to the specific needs of the farmer.</p>
+            <p>Overall, this crop prediction project is designed to support the agricultural sector by leveraging data science and machine learning technologies. It provides a valuable tool for farmers to enhance their decision-making processes and achieve better outcomes in their farming practices.</p>
+            <p>The project also includes visualizations and insights that make it easier for users to understand the recommendations and take actionable steps based on the predictions provided by the system. With continuous improvements and updates, this tool aims to stay relevant and useful in the ever-evolving field of agriculture.</p>
+            <div class="text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlSw8EwtUZtOGi8wTeB8fb-Y6AwByRpIeRjlsiq0VhNrJlktwuO1SsMK6EePU2mc9neqg&usqp=CAU" alt="Crop 1"> <!-- Replace with your crop images -->
+                <img src="https://media.istockphoto.com/id/1659089572/photo/smile-greenhouse-and-black-woman-on-farm-with-vegetables-in-sustainable-business-nature-and.webp?b=1&s=612x612&w=0&k=20&c=PMMGj2GdcpdrDU74VUFNtSio2Q71mtpJgUVU6ZjCGOw=" alt="Crop 2">
+                <img src="https://media.istockphoto.com/id/659524906/photo/composition-with-variety-of-vegetarian-food-ingredients.jpg?s=612x612&w=0&k=20&c=AzFdpJXWAVArpzTxJxhUqCENYcYb2ozltPhYaYJAkFQ=" alt="Crop 3">
+                <!-- Add more crop images as needed -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Crop Prediction System. All Rights Reserved.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
